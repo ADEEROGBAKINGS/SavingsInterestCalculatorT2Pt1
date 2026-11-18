@@ -15,5 +15,11 @@ public class SavingsInterest {
 
         return convertedDeposit;
     }
+    public int convertInterest(double interest) {
+
+        int convertedInterest = (int) interest;
+
+        return convertedInterest;
+    }
 
 }
