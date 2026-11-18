@@ -23,6 +23,11 @@ public class Main {
         double interest = savings.calculateInterest(
                 customer.deposit, customer.interestRate
         );
+        double convertedDeposit = savings.convertDeposit(deposit);
+
+        int truncatedInterest = savings.convertInterest(interest);
+
+        long roundedInterest = savings.roundInterest(interest);
 
     }
 }
