@@ -9,5 +9,11 @@ public class SavingsInterest {
 
         return Math.round(interest);
     }
+    public double convertDeposit(int deposit) {
+
+        double convertedDeposit = deposit;
+
+        return convertedDeposit;
+    }
 
 }
