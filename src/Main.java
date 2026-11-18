@@ -23,11 +23,35 @@ public class Main {
         double interest = savings.calculateInterest(
                 customer.deposit, customer.interestRate
         );
+
         double convertedDeposit = savings.convertDeposit(deposit);
 
         int truncatedInterest = savings.convertInterest(interest);
 
         long roundedInterest = savings.roundInterest(interest);
 
+        System.out.println("\n===== SAVINGS INTEREST REPORT =====");
+
+        System.out.println("Customer Name: " + name);
+
+        System.out.println("Original Deposit: " + deposit);
+
+        System.out.println("Converted Deposit: " + convertedDeposit);
+
+        System.out.println("Interest Rate: " + rate + "%");
+
+        System.out.println("Calculated Interest: " + interest);
+
+        System.out.println("Interest After Manual Conversion: " + truncatedInterest);
+
+        System.out.println("Rounded Interest: " + roundedInterest);
+
+        System.out.println("Total Deposit: " + deposit);
+
+        System.out.println("Total Interest: " + roundedInterest);
+
+        System.out.println("Total Savings: " + (deposit + roundedInterest));
+
+        input.close();
     }
 }
