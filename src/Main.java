@@ -15,5 +15,14 @@ public class Main {
         System.out.print("Enter interest rate: ");
         double rate = input.nextDouble();
 
+        CustomerSavingsInterest customer =
+                new CustomerSavingsInterest(name, deposit, rate);
+
+        SavingsInterest savings = new SavingsInterest();
+
+        double interest = savings.calculateInterest(
+                customer.deposit, customer.interestRate
+        );
+
     }
 }
