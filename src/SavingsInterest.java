@@ -5,4 +5,9 @@ public class SavingsInterest {
         return deposit * (rate / 100);
     }
 
+    public long roundInterest(double interest) {
+
+        return Math.round(interest);
+    }
+
 }
